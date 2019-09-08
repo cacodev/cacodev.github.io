@@ -1,17 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Haezl`,
+    title: `CaCoDev`,
     author: {
-      name: "gatsby starter haezl",
-      image: "/img/me.png",
-      biography: "A lightweight, mobile first blog starter with infinite scroll \
-        and Material-UI design elements for Gatsby.",
+      name: "Casey Collins",
+      image: "/img/me.jpg",
+      biography: "Thoughts, stories, and ideas from Software Craftsman Casey Collins",
     },
-    // for a list of supported networks take a look at https://jaketrent.github.io/react-social-icons/
     networks: [
-      "https://twitter.com/iamhaezl",
-      "https://github.com/haezl/gatsby-starter-haezl",
-      "mailto:mail@haezl.at",
+      "https://twitter.com/cacode",
+      "https://github.com/cacodev",
+      "https://www.linkedin.com/in/cacodev"
     ],
     about: '<p>A lightweight, mobile first blog starter with infinite scroll \
     and Material-UI design elements for \
@@ -75,7 +73,7 @@ module.exports = {
         background_color: "#eeeeee",
         theme_color: "#0c9ed1",
         display: "standalone",
-        icon: "static/img/me.png",
+        icon: "static/img/me.jpg",
         include_favicon: true,
       },
     },

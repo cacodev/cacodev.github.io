@@ -2,7 +2,7 @@ const THEME = {
   blogPost: {
     layout: {
       cardMaxWidth: 1000,
-      backgroundColor: "#eeeeee",
+      backgroundColor: "#2d2d2d",
     },
     showMoreButton: {
       color: "#059ce2",
@@ -20,10 +20,10 @@ const THEME = {
   index: {
     layout: {
       cardSectionMaxWidth: 800,
-      backgroundColor: "#eeeeee",
+      backgroundColor: "#2d2d2d",
     },
     header: {
-      backgroundImage: "linear-gradient(20deg, #039be5, #26a69a)",
+      backgroundImage: "linear-gradient(10deg, #005064, #16A0A0)",
     },
     aboutButton: {
       color: "white",
@@ -64,7 +64,7 @@ const THEME = {
   aboutPage: {
     layout: {
       cardMaxWidth: 800,
-      backgroundColor: "#eeeeee",
+      backgroundColor: "#2d2d2d",
     },
   },
 }

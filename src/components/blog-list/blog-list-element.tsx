@@ -32,17 +32,6 @@ export default ({ data }: IBlogListElement) => (
           }}
         >
           <CardHeader
-            avatar={
-              <Avatar
-                style={{ 
-                  backgroundColor: THEME.blogListElement.avatar.backgroundColor,
-                  color: THEME.blogListElement.avatar.color, 
-                  textShadow: "none" 
-                }}
-              >
-                {data.title.charAt(0).toUpperCase()}
-              </Avatar>
-            }
             title={data.title}
             subheader={data.date}
           />

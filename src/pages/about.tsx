@@ -20,7 +20,7 @@ const ContentArea = ({ data }: any) => (
         textAlign: "center",
       }}
     >
-      About {data.site.siteMetadata.title}
+      Hi! I'm {data.site.siteMetadata.author.name}
     </h1>
     {
       // tslint:disable:react-no-dangerous-html
@@ -73,6 +73,9 @@ export const query = graphql`
       siteMetadata {
         title
         about
+        author {
+          name
+        }
       }
     }
   }

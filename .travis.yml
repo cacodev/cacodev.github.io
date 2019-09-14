@@ -1,9 +1,17 @@
 language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
 
-dist: trusty
-sudo: false
-
-install:
-  - npm install
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
 script:
-  - npm run deploy
+  - "npm run test"
+after_success:
+  - "npm run deploy"

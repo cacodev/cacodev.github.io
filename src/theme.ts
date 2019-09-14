@@ -34,8 +34,8 @@ const THEME = {
   },
   author: {
     avatar: {
-      width: 70,
-      height: 70,
+      width: 180,
+      height: 180,
     },
     title: {
       color: "white",
@@ -58,8 +58,8 @@ const THEME = {
   networkButton: {
     color: "white",
     backgroundColor: "#333",
-    width: 45,
-    height: 45,
+    width: 50,
+    height: 50,
   },
   aboutPage: {
     layout: {

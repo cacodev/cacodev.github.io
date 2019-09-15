@@ -28,6 +28,7 @@ export default ({ networks }: ISocialNetworks) => (
           style={{
             width: THEME.networkButton.width,
             height: THEME.networkButton.height,
+            backgroundImage: 'none'
           }}
           fgColor={THEME.networkButton.color}
           bgColor={THEME.networkButton.backgroundColor}

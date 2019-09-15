@@ -4,6 +4,7 @@ import { withPrefix, Link } from "gatsby"
 import Avatar from "@material-ui/core/Avatar"
 import Grid from "@material-ui/core/Grid"
 import THEME from "../../theme"
+import { NONAME } from "dns"
 
 interface IProps {
   author: {
@@ -21,7 +22,7 @@ export default ({ author }: IProps) => {
       alignItems="center"
       direction={"column"}
     >
-      <Link to="/">
+      <Link style={{ backgroundImage: 'none' }} to="/">
         <Avatar
           style={{
             alignItems: "baseline",

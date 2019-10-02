@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-haezl",
+  "name": "cacodev-blog",
   "private": true,
-  "description": "A lightweight, mobile first blog starter with infinite scroll and Material-UI design elements for Gatsby",
-  "version": "1.0.0",
+  "description": "Blog for Cacodev",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "lint": "tslint --project tsconfig.json -c tslint.json",

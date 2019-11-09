@@ -8,6 +8,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  local_dir: "./public"
   keep_history: true
   target_branch: master
   on:
@@ -19,4 +20,4 @@ before_script:
 script:
   - "npm run test"
 after_success:
-  - "npm run deploy"
+  - "npm run build"

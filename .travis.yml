@@ -6,7 +6,12 @@ cache:
   - node_modules
 deploy:
   provider: pages
-  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  target_branch: master
+  on:
+    branch: dev
 
 before_script:
   - "npm i -g gatsby"

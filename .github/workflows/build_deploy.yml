@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build n Deploy
 
 on: [push]
 
@@ -25,4 +25,3 @@ jobs:
       uses: maxheld83/ghpages@v0.2.1
       env: 
         BUILD_DIR: "public/"
-      secrets: [ "GH_PAT" ] 

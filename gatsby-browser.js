@@ -31,7 +31,8 @@ export const onInitialClientRender = () => {
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
     if (window.appInsights) {
-        window.appInsights.trackPageView({ name: location.pathname, url: location.href });
+        const routeName = location.pathname ?? '/';
+        window.appInsights.trackPageView({ name: routeName, url: location.href });
     }
     
 }

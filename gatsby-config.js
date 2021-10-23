@@ -7,7 +7,7 @@ module.exports = {
       biography: "Thoughts, stories, and ideas from Software Craftsman Casey Collins",
     },
     networks: [
-      "https://twitter.com/cacode",
+      "https://twitter.com/cacodev",
       "https://github.com/cacodev",
       "https://www.linkedin.com/in/cacodev"
     ],

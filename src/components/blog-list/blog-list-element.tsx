@@ -16,7 +16,7 @@ interface IBlogListElement {
     date: string
     title: string
     description: string
-    coverFluid: any | null
+    cover: any | null
   }
 }
 
@@ -35,7 +35,7 @@ export default ({ data }: IBlogListElement) => (
             title={data.title}
             subheader={data.date}
           />
-          {data.coverFluid ? <GatsbyImage alt="img" image={data.coverFluid}  /> : null}
+          {data.cover ? <GatsbyImage alt="img" image={data.cover}  /> : null}
           <CardContent>
             <Typography component="p">{data.description}</Typography>
           </CardContent>

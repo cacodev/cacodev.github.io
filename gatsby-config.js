@@ -17,7 +17,6 @@ module.exports = {
   },
   plugins: [
     //`gatsby-plugin-tslint`,
-    `gatsby-plugin-image`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,7 +31,8 @@ module.exports = {
         plugins: [
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-emoji-unicode`,
-          /*{
+          "gatsby-remark-gifs",
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
@@ -41,7 +41,7 @@ module.exports = {
               showLineNumbers: true,
               noInlineHighlight: false,
             },
-          },*/
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -58,6 +58,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-material-ui`,

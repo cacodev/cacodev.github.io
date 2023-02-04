@@ -16,7 +16,7 @@ interface IProps {
             description: string
             cover: {
               childImageSharp: {
-                fluid: any
+                gatsbyImageData: any
               }
             }
             fields: {
@@ -60,11 +60,7 @@ export const query = graphql`
             description
             cover {
               childImageSharp {
-                ... on ImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 400) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
+                gatsbyImageData(layout:FULL_WIDTH)
               }
             }
           }

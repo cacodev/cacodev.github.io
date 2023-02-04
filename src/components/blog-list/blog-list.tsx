@@ -22,7 +22,7 @@ interface IProps {
       description: string
       cover?: {
         childImageSharp?: {
-          fluid: any | null
+          gatsbyImageData: any
         }
       }
     }
@@ -74,10 +74,10 @@ class BlogListDesktop extends React.Component<IProps, {}> {
                 date: node.frontmatter.date,
                 title: node.frontmatter.title,
                 description: node.frontmatter.description,
-                coverFluid:
+                cover:
                   node.frontmatter.cover &&
                   node.frontmatter.cover.childImageSharp
-                    ? node.frontmatter.cover.childImageSharp.fluid
+                    ? node.frontmatter.cover.childImageSharp.gatsbyImageData
                     : null,
               }}
             />
@@ -109,10 +109,10 @@ class BlogListMobile extends React.Component<IProps, {}> {
                 date: node.frontmatter.date,
                 title: node.frontmatter.title,
                 description: node.frontmatter.description,
-                coverFluid:
+                cover:
                   node.frontmatter.cover &&
                   node.frontmatter.cover.childImageSharp
-                    ? node.frontmatter.cover.childImageSharp.fluid
+                    ? node.frontmatter.cover.childImageSharp.gatsbyImageData
                     : null,
               }}
             />

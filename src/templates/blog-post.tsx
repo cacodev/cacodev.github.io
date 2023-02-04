@@ -1,7 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layouts/blog-post-layout"
-import { FluidObject } from "gatsby-image"
 
 interface IBlogPost {
   data: {
@@ -11,7 +10,7 @@ interface IBlogPost {
         title: string
         cover: {
           childImageSharp: {
-            fluid: FluidObject
+            gatsbyImageData: any
           }
         }
       }
@@ -23,7 +22,7 @@ export default ({ data }: IBlogPost) => {
   const node = data.markdownRemark
   const cover =
     node.frontmatter.cover && node.frontmatter.cover.childImageSharp
-      ? node.frontmatter.cover.childImageSharp.fluid
+      ? node.frontmatter.cover.childImageSharp.gatsbyImageData
       : null
 
   return (
@@ -45,11 +44,7 @@ export const query = graphql`
         title
         cover {
           childImageSharp {
-            ... on ImageSharp {
-              fluid(maxWidth: $coverImageMaxWidth) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
+            gatsbyImageData(width: $coverImageMaxWidth)
           }
         }
       }

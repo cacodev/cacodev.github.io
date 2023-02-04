@@ -2,7 +2,7 @@
 title: "Bouncy Balls Over Web Sockets"
 date: "2018-09-27"
 description: "Bouncy Balls Over Web Sockets"
-cover: "bouncy-cropped.gif"
+cover: "bounce.png"
 ---
 I'm feeling very inspired here at SpringOne Platform. There's a lot of hype around reactive programing with streaming data.
 

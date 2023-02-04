@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-about-tsx","path":"/about/","result":{"data":{"site":{"siteMetadata":{"title":"CaCoDev","about":"<p>... and I enjoy making quality software.     </p>     ","author":{"name":"Casey Collins"}}}},"pageContext":{}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-about-tsx",
+    "path": "/about/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"CaCoDev","about":"<p>... and I enjoy making quality software.     </p>     ","author":{"name":"Casey Collins"}}}},"pageContext":{}},
+    "staticQueryHashes": ["1140193323"]}

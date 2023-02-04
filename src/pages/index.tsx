@@ -2,7 +2,6 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layouts/index-layout"
 import BlogList from "../components/blog-list/blog-list"
-import { FluidObject } from "gatsby-image"
 
 interface IProps {
   data: {
@@ -17,7 +16,7 @@ interface IProps {
             description: string
             cover: {
               childImageSharp: {
-                fluid: FluidObject
+                fluid: any
               }
             }
             fields: {

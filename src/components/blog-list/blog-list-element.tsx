@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Image, { FluidObject } from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Card from "@material-ui/core/Card"
 import CardActionArea from "@material-ui/core/CardActionArea"
@@ -16,7 +16,7 @@ interface IBlogListElement {
     date: string
     title: string
     description: string
-    coverFluid: FluidObject | null
+    coverFluid: any | null
   }
 }
 
@@ -35,7 +35,7 @@ export default ({ data }: IBlogListElement) => (
             title={data.title}
             subheader={data.date}
           />
-          {data.coverFluid ? <Image fluid={data.coverFluid} /> : null}
+          {data.coverFluid ? <GatsbyImage alt="img" image={data.coverFluid}  /> : null}
           <CardContent>
             <Typography component="p">{data.description}</Typography>
           </CardContent>

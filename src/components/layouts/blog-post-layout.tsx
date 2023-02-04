@@ -1,10 +1,10 @@
 import * as React from "react"
-import Image, { FluidObject } from "gatsby-image"
 import Card from "@material-ui/core/Card"
 import Responsive from "react-responsive"
 
 import THEME from "../../theme"
 import FabButton from "../shared/FabButton"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />
 const Default = props => <Responsive {...props} minWidth={768} />
@@ -15,13 +15,13 @@ interface IContentAreaProps {
 }
 
 interface IHeaderArea {
-  cover: FluidObject
+  cover: any
 }
 
 interface IBlogPostLayout {
   children: React.ReactNode
   title: string
-  cover: FluidObject
+  cover: any
 }
 
 const ContentArea = ({ title, children }: IContentAreaProps) => (
@@ -60,7 +60,7 @@ const HeaderArea = ({ cover }: IHeaderArea) => {
     <>
       <FabButton onClickHandler={goBack} />
       <div style={{ height: "auto", width: "auto" }}>
-        {cover ? <Image fluid={cover} /> : null}
+        {cover ? <GatsbyImage alt="cover" image={cover} /> : null}
       </div>
     </>
   )

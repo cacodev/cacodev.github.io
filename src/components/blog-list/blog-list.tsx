@@ -6,7 +6,6 @@ import ShowMoreButton from "./show-more-button"
 
 import BlogListElement from "./blog-list-element"
 import CONFIG from "../../config"
-import { FluidObject } from "gatsby-image"
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />
 const Default = props => <Responsive {...props} minWidth={768} />
@@ -23,7 +22,7 @@ interface IProps {
       description: string
       cover?: {
         childImageSharp?: {
-          fluid: FluidObject | null
+          fluid: any | null
         }
       }
     }
